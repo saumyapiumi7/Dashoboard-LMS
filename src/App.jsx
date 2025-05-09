@@ -11,6 +11,11 @@ import bll from './assets/ball.svg';
 import eye from './assets/Eye.svg'
 import SimpleLineChart from './SimpleLineChart.jsx'; // adjust path as needed
 import SimplePieChart from './SimplePieChart.jsx'; // adjust path as needed
+import EditIcon from './assets/edit.png';
+import Profile from './assets/profile.png';
+import verification from './assets/Verification Icon.svg';
+
+
 
 
 
@@ -172,7 +177,82 @@ function App() {
 
         </div>
 
-        <div>Profile</div>
+        <div className='ProfileCard'>
+    <div className='ProfileName'>Profile</div>
+    <img src={EditIcon} alt="" className='EditIcon' />
+    <img src={Profile} alt="" className='Profile' />
+    <div className='UserProfileName'>Saumya Herath</div>
+    <img src={verification} alt="" className='Verification'/>
+    <div className='ProfileType'>User</div>
+
+
+
+    <div className='calender'>
+    <div className="Calendar">
+      <div className="CalendarHeader">
+        <span>&lt;</span>
+        <span className="MonthYear">March 2020</span>
+        <span>&gt;</span>
+      </div>
+
+      <div className="CalendarWeekdays">
+        <div>M</div>
+        <div className="HighlightWeekday">T</div>
+        <div>W</div>
+        <div>T</div>
+        <div>F</div>
+        <div>S</div>
+        <div>S</div>
+      </div>
+
+      <div className="CalendarDates">
+        <div>17</div>
+        <div  className="HighlightDate"></div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+      </div>
+    </div>
+
+    
+
+    </div>
+    <hr className="divider1" />
+
+    <div className='announc'>Latest Announcements</div>
+
+    <div className='latestmsg'>
+      <div className='sender'>Admin</div>
+      <div className='msg' >Exam Time Table - 2020 </div>
+      <hr className="divider2" />
+
+    </div>
+
+    <div className='latestmsg'>
+      <div className='sender'>Admin</div>
+      <div className='msg' >Exam Time Table - 2020 </div>
+      <hr className="divider2" />
+
+    </div>
+
+    <div className='latestmsg'>
+      <div className='sender'>Admin</div>
+      <div className='msg' >Exam Time Table - 2020 </div>
+      <hr className="divider2" />
+
+    </div>
+
+    <div className='latestmsg'>
+      <div className='sender'>Admin</div>
+      <div className='msg' >Exam Time Table - 2020 </div>
+      <hr className="divider2" />
+
+    </div>
+
+
+</div>
 
 
 
