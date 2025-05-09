@@ -9,6 +9,10 @@ import hihand from './assets/hi-hand.png';
 import search from './assets/search.svg';
 import bll from './assets/ball.svg';
 import eye from './assets/Eye.svg'
+import SimpleLineChart from './SimpleLineChart.jsx'; // adjust path as needed
+import SimplePieChart from './SimplePieChart.jsx'; // adjust path as needed
+
+
 
 
 
@@ -84,7 +88,91 @@ function App() {
   </div>
 </div>
 
+
+<div className='chartSection'>
+  <div className='lineChart'>
+    <div className='lineChartTopic'> User Activity</div>
+    <div className='chartone'>
+    <SimpleLineChart />
+    </div>
+
+
+  </div>
+
+  <div className= 'pieChart'> 
+  <div className="daily-active-card">
+      <div className="card-header">
+        <div>
+          <div className="card-title">Daily Active Users</div>
+          <div className="noOfUsers">1051</div>
         </div>
+        <select className="card-select">
+          <option>Daily</option>
+        </select>
+      </div>
+
+      <div className="chart-section">
+        <div  className='pie'>
+        <SimplePieChart />
+        </div>
+      </div>
+
+      <hr className="divider" />
+
+      <div className="subheading">By Authentication Method</div>
+
+      <div className="AuthContainer">
+  <div className="Authmethod">
+    <div className="Authname">Microsoft</div>
+    <div className="AuthLine"></div>
+    <div className="AuthUsers">100</div>
+  </div>
+  <div className="Authmethod">
+    <div className="Authname">Internal</div>
+    <div className="AuthLine"></div>
+    <div className="AuthUsers">100</div>
+  </div>
+  <div className="Authmethod">
+    <div className="Authname">SMAL</div>
+    <div className="AuthLine"></div>
+    <div className="AuthUsers">100</div>
+  </div>
+</div>  
+    </div>
+  </div>
+</div>
+
+
+<div className='ActiveLog'>Activity Log</div>
+<div className="LogTable">
+  <div className="TableHeader">
+    <div className="TableTopic">MESSAGE</div>
+    <div className="TableTopic">TIME</div>
+  </div>
+
+  <div className="TableRow">
+    <div className="MessageText">Username here Permissions changed to admin by admin123</div>
+    <div className="TimeText">2hrs ago</div>
+  </div>
+  <div className="TableRow">
+    <div className="MessageText"><strong>Username</strong> Successfully logged-in</div>
+    <div className="TimeText">2hrs ago</div>
+  </div>
+  <div className="TableRow">
+    <div className="MessageText">Username here Permissions changed to admin by admin123</div>
+    <div className="TimeText">2hrs ago</div>
+  </div>
+  <div className="TableRow">
+    <div className="MessageText"><strong>Username</strong>  Successfully logged-in</div>
+    <div className="TimeText">2hrs ago</div>
+  </div>
+</div>
+
+
+
+        </div>
+
+        <div>Profile</div>
 
 
 
